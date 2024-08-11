@@ -1,1 +1,1 @@
-# resde832.github.io
+Atlast nijer domain paisi.
