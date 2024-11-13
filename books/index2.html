@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <style>
+    /* Reset styling for cleaner appearance */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Page styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 2rem;
+      color: #444;
+    }
+
+    /* Header styling */
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    /* Card list styling */
+    .book-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    /* Individual card styling */
+    .book-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .book-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Image styling */
+    .book-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    /* Link and title styling */
+    .book-info {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .book-info a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .book-info a:hover {
+      color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Library</h1>
+  <ul class="book-list">
+    <li class="book-card">
+      <!-- Book cover image -->
+      <img src="https://pictures.abebooks.com/isbn/9789339220150-us.jpg" alt="Nutrition and Dietetics Book Cover">
+      
+      <!-- Book title with clickable link -->
+      <div class="book-info">
+        <a href="https://github.com/resde832/resde832.github.io/raw/refs/heads/main/books/Shubhangini%20A%20Joshi%20-%20Nutrition%20and%20Dietetics-McGraw-Hill%20Education%20(2015).pdf" target="_blank">
+          Nutrition and Dietetics
+        </a>
+      </div>
+    </li>
+    <!-- Add more book cards as needed -->
+  </ul>
+
+</body>
+</html>
