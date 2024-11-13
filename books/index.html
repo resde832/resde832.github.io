@@ -44,38 +44,46 @@
 
     .book-card {
       background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      overflow: hidden;
-      width: 200px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px; /* Increased width for a larger card */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem;
     }
 
     .book-card:hover {
-      transform: translateY(-5px);
-    }
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
 
-    .book-card img {
-      width: 100%;
-      height: auto;
-    }
+.book-card img {
+  width: 100%;
+  height: 250px; /* Set a fixed height for consistent image size */
+  object-fit: cover; /* Ensures image aspect ratio is maintained */
+  border-bottom: 2px solid #ddd; /* Adds a clean dividing line */
+}
 
     .book-info {
-      padding: 0.5rem;
-      text-align: center;
-    }
+  padding: 10px;
+  text-align: center;
+}
 
     .book-info a {
-      text-decoration: none;
-      color: #0066cc;
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: block;
+  text-overflow: ellipsis; /* Truncates long titles with an ellipsis */
+  white-space: nowrap;
+  overflow: hidden;
+}
 
     .book-info a:hover {
-      color: #004499;
-    }
+  color: #004499;
+}
 
     @media (max-width: 600px) {
       .book-card {
