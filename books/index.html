@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Library</title>
   <style>
+    /* Import the Hind Siliguri font */
+    @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap');
+
     * {
       margin: 0;
       padding: 0;
@@ -12,22 +15,21 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fafafa;
+      font-family: 'Hind Siliguri', sans-serif;
+      background-color: #f9fafb;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       padding: 2rem;
-      color: #444;
+      color: #333;
     }
 
     h1 {
-      font-size: 2.5rem;
-      color: #333;
-      margin-bottom: 2rem;
-      font-weight: 700;
-      letter-spacing: 1px;
+      font-size: 2rem;
+      color: #444;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
       text-align: center;
     }
 
@@ -35,22 +37,23 @@
       list-style: none;
       display: flex;
       flex-wrap: wrap;
-      gap: 1.5rem;
+      gap: 1rem;
       justify-content: center;
+      padding: 0;
     }
 
     .book-card {
       background-color: #fff;
       border: 1px solid #ddd;
-      border-radius: 8px;
+      border-radius: 6px;
       overflow: hidden;
-      width: 200px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 150px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s;
     }
 
     .book-card:hover {
-      transform: scale(1.05);
+      transform: translateY(-5px);
     }
 
     .book-card img {
@@ -59,19 +62,29 @@
     }
 
     .book-info {
-      padding: 1rem;
+      padding: 0.5rem;
       text-align: center;
     }
 
     .book-info a {
       text-decoration: none;
-      color: #007bff;
-      font-weight: bold;
-      font-size: 1.1rem;
+      color: #0066cc;
+      font-weight: 600;
+      font-size: 0.9rem;
     }
 
     .book-info a:hover {
-      color: #0056b3;
+      color: #004499;
+    }
+
+    @media (max-width: 600px) {
+      .book-card {
+        width: 120px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
     }
   </style>
 </head>
@@ -83,18 +96,18 @@
       <img src="https://pictures.abebooks.com/isbn/9789339220150-us.jpg" alt="Nutrition and Dietetics Book Cover">
       <div class="book-info">
         <a href="https://github.com/resde832/resde832.github.io/raw/refs/heads/main/books/Shubhangini%20A%20Joshi%20-%20Nutrition%20and%20Dietetics-McGraw-Hill%20Education%20(2015).pdf" target="_blank">
-          Shubhangini A. Joshi - Nutrition and Dietetics (2015) (4th Edition)
+          Shubhangini A. Joshi - Nutrition and Dietetics (2015) (4th Edition) 
         </a>
       </div>
     </li>
     <li class="book-card">
-  <img src="https://accoshop-assets-prod.s3.eu-west-1.amazonaws.com/content_cover/9781108586627/288x400/9781108586627.png" alt="English Grammar in Use Book Cover">
-  <div class="book-info">
-    <a href="https://englishfrench.academy/wp-content/uploads/2020/09/235_7-English-Grammar-in-Use.-Murphy-R.-2019-5th-394p-.pdf" target="_blank">
-      Murphy, Raymond - English Grammar in Use (2021) (5th Edition)
-    </a>
-  </div>
-</li>
+      <img src="https://accoshop-assets-prod.s3.eu-west-1.amazonaws.com/content_cover/9781108586627/288x400/9781108586627.png" alt="English Grammar in Use Book Cover">
+      <div class="book-info">
+        <a href="https://englishfrench.academy/wp-content/uploads/2020/09/235_7-English-Grammar-in-Use.-Murphy-R.-2019-5th-394p-.pdf" target="_blank">
+          Murphy, Raymond - English Grammar in Use (2021) (5th Edition) 
+        </a>
+      </div>
+    </li>
   </ul>
 
 </body>
